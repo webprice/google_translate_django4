@@ -1,9 +1,9 @@
 Metadata-Version: 2.1
 Name: google-translate-django4
-Version: 0.4
+Version: 0.5
 Summary: The working google translate module for Django version 4 and above
 Home-page: https://github.com/webprice/google_translate_django4
-Download-URL: https://github.com/webprice/google_translate_django4/archive/refs/tags/v_0.3.tar.gz
+Download-URL: https://github.com/webprice/google_translate_django4/archive/refs/heads/main.zip
 Author: Serhii Hrekov
 Author-email: admin@broplanner.com
 License: MIT
@@ -31,7 +31,7 @@ License-File: LICENSE.txt
 ```
 pip install django-google-translate
 ```
-##### Add вЂњgoogle_translateвЂќ to your INSTALLED_APPS setting like this:
+##### Add `google_translate` to your INSTALLED_APPS setting like this:
 ```
 INSTALLED_APPS = [
     ...
