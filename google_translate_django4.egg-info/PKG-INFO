@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: google-translate-django4
+Version: 0.4
+Summary: The working google translate module for Django version 4 and above
+Home-page: https://github.com/webprice/google_translate_django4
+Download-URL: https://github.com/webprice/google_translate_django4/archive/refs/tags/v_0.3.tar.gz
+Author: Serhii Hrekov
+Author-email: admin@broplanner.com
+License: MIT
+Keywords: Django translate,Django Google Translate,Google translate
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Google Translate for Django 4 and Django 4+
+## This is the working google translate library for Django v4 and above. 
+> The orignal source and credits go to: https://pypi.org/project/django-google-translate/ (not working with Django 4+)
+
+## Quick start
+##### Download the package:
+```
+pip install django-google-translate
+```
+##### Add вЂњgoogle_translateвЂќ to your INSTALLED_APPS setting like this:
+```
+INSTALLED_APPS = [
+    ...
+    'google_translate',
+]
+```
+##### Load the translate tag in your template (ideally on base.html):
+```
+{% load google_translate %}
+``` 
+##### Add following template tag wherever you want to show translate button:
+```
+{% google_translate %}
+```
+##### You can also pass type and default language in the translate button type in the inclusion tag (OPTIONAL):
+```
+{% google_translate type='vertical' language='en' %}
+```
+##### Available values for the type are "horizontal", "vertical" and "simple" (default) and for language you can pass any ISO language code
